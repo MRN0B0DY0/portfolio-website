@@ -6,6 +6,17 @@ body {
     padding: 0;
 }
 
+.project {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -37,3 +48,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
